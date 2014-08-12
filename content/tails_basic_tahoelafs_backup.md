@@ -8,14 +8,21 @@ Summary: Use Tahoe-LAFS with Tails!
 
 #### securely backup your [Tails persistent volume](https://tails.boum.org/doc/first_steps/persistence/index.en.html) using Tahoe-LAFS over Tor
 
+This HOWTO requires you to have access to a **Tahoe-LAFS storage grid**.
+You have 2 choices:
+
+*  [build your own Tahoe-LAFS storage grid](/create-a-tahoe-lafs-onion-grid.html)
+
+*  purchase Tahoe-LAFS storage grid access from [LeastAuthority](https://leastauthority.com/) or other companies
+
 
 ### why Tahoe-LAFS?
 
 Do you backup your personal data?
 
-Using Dropbox, AWS storage or Google Drive to backup data is a shameful act...
-but we have a choice! We can choose to use verified end to end crypto... and join the [cypherpunks movement](http://www.activism.net/cypherpunk/manifesto.html).
-When you use Tahoe-LAFS you are choosing to be in control of the verifiability, confidentiality and erasure encoding or your data.
+Using Dropbox, AWS storage or Google Drive to backup data doesn't give users control over the confidentiality of their data.
+But we have a choice! We can choose to use verified end to end crypto (read the [cypherpunks manifesto](http://www.activism.net/cypherpunk/manifesto.html)).
+When you use Tahoe-LAFS you are choosing to be in control of the verifiability, confidentiality and erasure encoding of your data.
 
 Tahoe-LAFS storage servers only see ciphertext blobs... additionally the Tahoe-LAFS cryptographic "capabilities model"
 is essentially a distributed access control system. The storage servers do not authorize access to data; instead the possessor

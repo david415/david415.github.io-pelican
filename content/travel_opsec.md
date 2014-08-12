@@ -12,16 +12,22 @@ aka
 
 ### Secure Covert Backup Strategy for Tails using Tahoe-LAFS
 
-**note:** You may want to first read [Simple Tails Backup procedure with Tahoe-LAFS](https://david415.github.io/simple-tails-backup-procedure-with-tahoe-lafs.html)
-if you are not yet familiar with Tahoe-LAFS
-
+**note:** Tails is a good choice but this could be applied to other operating systems/Linux distros.
+In some ways this article is a continuation of [Simple Tails Backup procedure with Tahoe-LAFS](https://david415.github.io/simple-tails-backup-procedure-with-tahoe-lafs.html)
 
 
 #### context
 
 When traveling in surveilance states where there is risk of search of seizure... **you do not want to be in posession of ciphertext, key material or other sensitive data**. If you are detained and have ciphertext they can request you for the phassphrase to decrypt your data. Things may not go so well for you if you don't comply with their demands.
 
-To fulfill this objective we can reduce the complexity of 
+To fulfill this objective of not carrying sensitive data we can choose to either carry benign data like
+a Tails disk with no Persistent volume... or no data at all. This means either "secure erasing" your drive(s).
+Perhaps some people will opt to not carry any drives at all. 
+Of course carrying no drives at all would mean that in the future you'll have to acquire an operating system
+and a drive to put it on... like Tails on a USB disk for instance.
+
+
+To meet this goal of not carrying any critical data we need to reduce the complexity of 
 restoring our confidential backup to two pieces of information
 that can be remembered (and should not be written down):
 
